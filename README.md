@@ -1,20 +1,20 @@
-# Questionaire
+# Questionnaire
 
-[![Code Climate](https://codeclimate.com/github/dr-click/survey.png)](https://codeclimate.com/github/dr-click/questionaire)
-### Questionaire on Rails...
+[![Code Climate](https://codeclimate.com/github/dr-click/survey.png)](https://codeclimate.com/github/dr-click/questionnaire)
+### Questionnaire on Rails...
 
-Questionaire is a Rails Engine that brings multi types of quizzes, surveys and contests into your Rails
-application. Questionaire models were designed to be flexible enough in order to be extended and
-integrated with your own models. Questionaire was initially extracted from a real application that handles contests and quizzes.
+Questionnaire is a Rails Engine that brings multi types of quizzes, surveys and contests into your Rails
+application. Questionnaire models were designed to be flexible enough in order to be extended and
+integrated with your own models. Questionnaire was initially extracted from a real application that handles contests and quizzes.
 
 ## Documentation
 
-You can view the Questionaire documentation in RDoc format here:
+You can view the Questionnaire documentation in RDoc format here:
 
-http://rubydoc.info/github/dr-click/questionaire/master/frames
+http://rubydoc.info/github/dr-click/questionnaire/master/frames
 
 ## Main Features:
- - Questionaire can limit the number of attempts for each participant, can have multiple sections
+ - Questionnaire can limit the number of attempts for each participant, can have multiple sections
  - Sections can have multiple questions
  - Questions can have multiple answers
  - Answers can have different weights and types (multi choices, single choice, number, text)
@@ -27,12 +27,12 @@ http://rubydoc.info/github/dr-click/questionaire/master/frames
 
 Add survey to your Gemfile:
 ```ruby
-gem 'questionaire', '0.1', :require=>"survey"
+gem 'questionnaire_engine', '0.1', :require=>"survey"
 
 ```
 or
 ```ruby
-gem 'questionaire', github: 'dr-click/questionaire', branch: 'master', :require=>"survey"
+gem 'questionnaire', github: 'dr-click/questionnaire', branch: 'master', :require=>"survey"
 
 ```
 Then run bundle to install the Gem:
@@ -66,7 +66,7 @@ you can pass the attribute `attempts_number` when creating them.
 # Each Participant can respond 4 times this survey
 Survey::Survey.new(:name => "Star Wars Quiz", :attempts_number => 4)
 ```
-## Questionaire used in your controllers
+## Questionnaire used in your controllers
 In this example we are using the current_user helper
 but you can do it in the way you want.
 
