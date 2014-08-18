@@ -6,7 +6,7 @@ class Survey::Option < ActiveRecord::Base
   
   #rails 3 attr_accessible support
   if Rails::VERSION::MAJOR < 4
-    attr_accessible :text, :correct, :weight, :question_id, :locale_text, :options_type_id
+    attr_accessible :text, :correct, :weight, :question_id, :locale_text, :options_type_id, :head_number
   end
   
   # validations
